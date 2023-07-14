@@ -14,6 +14,12 @@ public class Mars {
 	}
 
 	// part I
+	/*
+	 * Previous missions have had to be aborted due to obstacles that caused damage
+	 * to the rover. Given a set of coordinates for all the known obstacles in the
+	 * format: [[1,4], [3,5], [7,4]]
+	 */
+	
 	public void direction(String commands) {
 		for (int i = 0; i < commands.length(); i++) {
 
@@ -27,7 +33,7 @@ public class Mars {
 
 				rotate_right();
 			} else {
-				System.out.println("Not Found");
+				System.out.println(commands.charAt(i) + " Not a valid  Command");
 			}
 
 		}
